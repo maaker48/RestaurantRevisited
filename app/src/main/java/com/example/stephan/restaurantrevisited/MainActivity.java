@@ -1,8 +1,6 @@
 package com.example.stephan.restaurantrevisited;
 
-import android.database.sqlite.SQLiteDatabase;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

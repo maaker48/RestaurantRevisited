@@ -5,7 +5,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.database.sqlite.SQLiteStatement;
 import android.util.Log;
 
 import com.android.volley.Request;
@@ -18,8 +17,6 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.sql.PreparedStatement;
 
 /**
  * Created by Stephan on 22-11-2017.
@@ -86,15 +83,16 @@ public class RestoDatabase extends SQLiteOpenHelper {
                 " SET " + KEY_SQL_COUNT + "= " + KEY_SQL_COUNT + " + ?" +
                 " WHERE " + KEY_SQL_NAME + "= ?",bindingArgs);
     }
-    public void removeItem(String name){
-        db = instance.getWritableDatabase();
-
-        String removeItemsql = "UPDATE " + TABLE_NAME +
-                " SET " + KEY_SQL_COUNT + "= 0 " +
-                " WHERE " + KEY_SQL_NAME + "= " + name;
-        db.execSQL(removeItemsql);
-
-    }
+//    <--- dit word een nog een to do --->>
+//    public void removeItem(String name){
+//        db = instance.getWritableDatabase();
+//
+//        String removeItemsql = "UPDATE " + TABLE_NAME +
+//                " SET " + KEY_SQL_COUNT + "= 0 " +
+//                " WHERE " + KEY_SQL_NAME + "= " + name;
+//        db.execSQL(removeItemsql);
+//
+//    }
 
     public void clear(){
         db = instance.getWritableDatabase();
@@ -110,11 +108,6 @@ public class RestoDatabase extends SQLiteOpenHelper {
         String selectall = "SELECT * FROM " + TABLE_NAME + " WHERE " + KEY_SQL_COUNT + " > 0";
         SQLiteDatabase db = instance.getWritableDatabase();
         cursor = db.rawQuery(selectall, null);
-//        if (cursor.moveToFirst()) {
-//            do {
-//                Log.d("databasecursor", cursor.getString(cursor.getColumnIndex(cursor.getColumnName(1))));
-//            } while (cursor.moveToNext());
-//        }
         return cursor;
     }
     public Cursor totalPrice() {
