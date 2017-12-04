@@ -15,8 +15,8 @@ This is the category menu if you press one of them there wil be an api call thas
 
 <img src="https://github.com/maaker48/RestaurantRevisited/blob/master/doc/sscatacory.jpeg" alt="sscatacory leegt" width="200px">
 
-<img src="https://github.com/maaker48/RestaurantRevisited/blob/master/doc/sscatacory.jpeg" alt="sscatacory leegt" width="200px">
+<img src="https://github.com/maaker48/RestaurantRevisited/blob/master/doc/sscatacoryoutput.jpeg" alt="sscatacoryoutput leegt" width="200px">
 
-<img src="https://github.com/maaker48/RestaurantRevisited/blob/master/doc/sscatacory.jpeg" alt="sscatacory leegt" width="200px">
+<img src="https://github.com/maaker48/RestaurantRevisited/blob/master/doc/ssorder.jpeg" alt="ssorder leegt" width="200px">
 
-<img src="https://github.com/maaker48/RestaurantRevisited/blob/master/doc/sscatacory.jpeg" alt="sscatacory leegt" width="200px">
+<img src="https://github.com/maaker48/RestaurantRevisited/blob/master/doc/ssorderplacment.jpeg" alt="ssorderplacement leegt" width="200px">
